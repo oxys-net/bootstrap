@@ -15,7 +15,7 @@
 @gray:                  #555;
 @grayLight:             #999;
 @grayLighter:           #eee;
-@white:                 #fff;
+@white:                 #fafafa;
 
 
 // Accent colors
@@ -38,7 +38,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             #2e435e;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -48,15 +48,16 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          16px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    'Helvetica Neue', Helvetica, Arial, sans-serif; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
+@rokkittFont:           "Rokkitt";
 
 // Component sizing
 // -------------------------
@@ -70,9 +71,9 @@
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:      0px;
+@borderRadiusLarge:     0px;
+@borderRadiusSmall:     0px;
 
 
 // Tables
@@ -85,25 +86,25 @@
 // Buttons
 // -------------------------
 @btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBackgroundHighlight:            darken(@white, 2%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              #43637a;
+@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 #c40350;
+@btnInfoBackgroundHighlight:        darken(#c40350,2%); //#2f96b4;
 
 @btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
+@btnSuccessBackgroundHighlight:     darken(#62c462,2%);//#51a351;
 
-@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackground:              lighten(@orange,5%);
 @btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackground:               #d44937;
+@btnDangerBackgroundHighlight:      darken(#d44937,2%);//#bd362f;
 
-@btnInverseBackground:              #444;
+@btnInverseBackground:              lighten(@grayDarker,10%);//#444;
 @btnInverseBackgroundHighlight:     @grayDarker;
 
 
@@ -242,8 +243,8 @@
 @successBackground:       #dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                #3a87ad;
-@infoBackground:          #d9edf7;
+@infoText:                #FAFAFA;
+@infoBackground:          #c40350;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
 
